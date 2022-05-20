@@ -234,4 +234,73 @@ export const GlobalStyle = createGlobalStyle`
   .dotted-line {
     background: radial-gradient(#000000, #000000 4px, transparent 4px, transparent);
   }
+
+  .btn {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 16px;
+    gap: 10px;
+    height: 48px;
+    color: ${({ theme }) => theme.colors.white};
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: ${({ theme }) => theme.font.size.subheading2};
+    font-weight: 700;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    background-color: transparent;
+
+    .icon {
+      path {
+        transition: 0.3s;
+      }
+    }
+
+    &.fade-in-button {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &.btn_secondary {
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.white};
+        color: ${({ theme }) => theme.colors.orange};
+
+        .icon path {
+          fill: ${({ theme }) => theme.colors.orange} !important;
+        }
+      }
+    }
+
+    &_primary {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0;
+      gap: 8px;
+
+      &__btn {
+        border: 2px solid #ffffff;
+      }
+
+      &__icon_wrapper {
+        background-color: ${({ theme }) => theme.colors.orange};
+        border-radius: 50%;
+        height: 48px;
+        width: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        path {
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+
 `

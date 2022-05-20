@@ -24,6 +24,10 @@ export const HeroStyle = styled.section`
 			padding: 32px 16px;
 		}
 
+    .mint-container {
+      margin-top: 48px;
+    }
+
 		> img {
 			height: 24px;
 		}

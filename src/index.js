@@ -2,16 +2,20 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+import store from './redux/store'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './styles/global/theme'
 import { GlobalStyle } from './styles/global/globalStyles'
+import { Provider } from 'react-redux'
 
 ReactDOM.render(
-	<ThemeProvider theme={theme}>
-		<GlobalStyle />
-		<App />
-	</ThemeProvider>,
-	document.getElementById('root')
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
+  </Provider>,
+  document.getElementById('root'),
 )
 
 // If you want to start measuring performance in your app, pass a function
