@@ -1,48 +1,38 @@
 import styled, { keyframes } from 'styled-components'
 
 export const TeamCarouselStyle = styled.div`
-	margin-top: 24px;
+  margin-top: 24px;
 
-	max-width: 548px;
-	margin-inline: auto;
+  max-width: 548px;
+  margin-inline: auto;
 
-	.slick-slider {
-		padding-bottom: 24px;
-	}
+  .slick-dots {
+    gap: 8px;
+    padding-top: 16px;
 
-	.slick-slide {
-		padding: 0 12px;
-	}
+    li {
+      width: 8px !important;
+      height: 8px !important;
+      transition: 0.3s;
 
-	.slick-slider {
-		padding-bottom: 50px;
-	}
+      button {
+        border-radius: 50%;
+        background-color: ${({ theme }) => theme.colors.lightRose} !important;
+        height: 8px !important;
+        width: 8px !important;
 
-	.slick-dots {
-		bottom: 20px;
-		gap: 8px;
+        &:before {
+          content: none !important;
+        }
+      }
 
-		li {
-			width: 8px;
-			height: 8px;
-			transition: 0.3s;
+      &.slick-active {
+        transform: scale(1.5);
 
-			button {
-				height: 100%;
-				width: 100%;
-				border-radius: 50%;
-				background-color: ${({ theme }) => theme.colors.lightRose} !important;
-
-				&:before {
-					content: none;
-				}
-			}
-
-			&.slick-active {
-				button {
-					background-color: ${({ theme }) => theme.colors.orange} !important;
-				}
-			}
-		}
-	}
+        button {
+          background-color: ${({ theme }) => theme.colors.orange} !important;
+        }
+      }
+    }
+  }
 `

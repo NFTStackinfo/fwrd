@@ -49,13 +49,13 @@ const Header = ({ onLinkClick }) => {
 					</nav>
 					<ul className="social">
 						<li>
-							<IconWrapper iconName="twitter" />
+							<IconWrapper iconName="twitter" size="lg" />
 						</li>
 						<li>
-							<IconWrapper iconName="instagram" />
+							<IconWrapper iconName="instagram" size="lg" />
 						</li>
 						<li>
-							<IconWrapper iconName="discord" />
+							<IconWrapper iconName="discord" size="lg" />
 						</li>
 					</ul>
 					<button
@@ -63,7 +63,7 @@ const Header = ({ onLinkClick }) => {
 						type="button"
 						onClick={handleDrawerToggle}
 					>
-						<Icon name={drawerOpened ? 'close' : 'menu'} size="24px" />
+						<Icon name={drawerOpened ? 'close' : 'menu'} size="32px" />
 					</button>
 				</div>
 			</div>

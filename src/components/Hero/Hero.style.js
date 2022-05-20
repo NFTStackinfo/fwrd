@@ -4,6 +4,7 @@ export const HeroStyle = styled.section`
 	background-image: url('/assets/hero/background.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+  background-position: center bottom;
 	padding-bottom: 164px;
 	padding-top: 144px;
 

@@ -19,5 +19,6 @@ export const FooterStyle = styled.footer`
 		font-size: ${({ theme }) => theme.font.size.subheading2};
 		font-family: ${({ theme }) => theme.font.secondary};
 		margin-top: 20px;
+    font-weight: 700;
 	}
 `

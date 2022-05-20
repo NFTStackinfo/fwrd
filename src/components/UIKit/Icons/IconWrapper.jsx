@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const IconWrapperStyle = styled.a`
 	background: hsl(0, 0%, 100%, 0.15);
 	border-radius: 4px;
-	padding: 5px;
+	padding: ${({ size }) => size === 'sm' ? '5px' : '8px'};
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -26,10 +26,10 @@ const IconWrapperStyle = styled.a`
 	}
 `
 
-function IconWrapper({ to = '#', iconName = 'twitter' }) {
+function IconWrapper({ to = '#', iconName = 'twitter', size="sm" }) {
 	return (
-		<IconWrapperStyle href={to} target="_blank" rel="noreferrer">
-			<Icon name={iconName} size="22px" />
+		<IconWrapperStyle href={to} target="_blank" rel="noreferrer" size={size}>
+			<Icon name={iconName} size={size === 'sm' ? '22px' : '32px'} />
 		</IconWrapperStyle>
 	)
 }
