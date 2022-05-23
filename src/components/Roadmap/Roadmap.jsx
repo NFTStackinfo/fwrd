@@ -14,6 +14,7 @@ const Roadmap = forwardRef((props, ref) => {
 						<RoadmapItem
 							key={`roadmap-item-${index}`}
 							{...item}
+              className={`roadmap-item-${index+1}`}
 							space={index !== roadmapData.length - 1}
 						/>
 					))}

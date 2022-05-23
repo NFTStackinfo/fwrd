@@ -1,71 +1,135 @@
 import styled from 'styled-components'
 
 export const RoadmapItemStyle = styled.div`
-	display: flex;
-	gap: 40px;
-	height: fit-content;
+  display: flex;
+  gap: 40px;
+  height: fit-content;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-		gap: 32px;
-	}
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    gap: 32px;
+  }
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-		gap: 24px;
-	}
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    gap: 24px;
+  }
 
-	&.space {
-		margin-bottom: 8px;
+  &.space {
+    margin-bottom: 8px;
 
-		.content {
-			padding-bottom: 40px;
-		}
-	}
+    .content {
+      padding-bottom: 40px;
+    }
+  }
 
-	.progress {
-		width: 24px;
-		height: auto;
-		//background-color: #f5f5f5;
-		flex-shrink: 0;
-		position: relative;
+  &.roadmap-item-1 {
+    .progress-overlay {
+      .progress__circle {
+        background-color: #EC4E27;
+      }
 
-		&__circle {
-			width: 24px;
-			height: 24px;
-			border-radius: 50%;
-			background-color: ${({ theme }) => theme.colors.white};
-			opacity: 0.2;
-		}
+      .progress__bar {
+        background-image: linear-gradient(201.72deg, #EC4E27 14.24%, #7EC1FF 179.97%);;
+      }
+    }
+  }
 
-		&__bar {
-			height: calc(100% - 12px - 24px);
-			background-color: ${({ theme }) => theme.colors.white};
-			opacity: 0.2;
-			border-radius: 8px;
-			width: 6px;
-			margin-inline: auto;
-			margin-top: 12px;
-		}
-	}
+  &.roadmap-item-2 {
+    .progress-overlay {
+      .progress__circle {
+        background-color: #C27B7B;
+      }
 
-	.content {
-		height: fit-content;
+      .progress__bar {
+        background-image: linear-gradient(206.38deg, #EC4E27 -27.34%, #7EC1FF 146.1%);
+      }
+    }
+  }
 
-		> span {
-			font-family: ${({ theme }) => theme.font.secondary};
-			font-size: ${({ theme }) => theme.font.size.subheading1};
-			font-weight: 700;
-			background: ${({ theme }) => theme.gradients.gradient2};
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
+  &.roadmap-item-3 {
+    .progress-overlay {
+      .progress__circle {
+        background-color: #A896AD;
+      }
 
-		> h4 {
-			margin-top: 8px;
-			text-transform: uppercase;
-		}
+      .progress__bar {
+        background-image: linear-gradient(204.17deg, #EC4E27 -185.68%, #7EC1FF 110.72%);
+      }
+    }
+  }
 
-		.description {
-			margin-top: 8px;
-		}
-	}
+  &.roadmap-item-4 {
+    .progress-overlay {
+      .progress__circle {
+        background-color: #8CB4E5;
+      }
+
+      .progress__bar {
+        background-image: linear-gradient(205.18deg, #EC4E27 -266.23%, #7EC1FF 66.35%);
+      }
+    }
+  }
+
+  .progress {
+    width: 24px;
+    height: auto;
+    flex-shrink: 0;
+    position: relative;
+
+    &__circle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: ${({ theme }) => theme.colors.white};
+      opacity: 0.2;
+    }
+
+    &__bar {
+      height: calc(100% - 12px - 24px);
+      background-color: ${({ theme }) => theme.colors.white};
+      opacity: 0.2;
+      border-radius: 8px;
+      width: 6px;
+      margin-inline: auto;
+      margin-top: 12px;
+    }
+
+    &-overlay {
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      height: 100px;
+      overflow: hidden;
+
+      .progress__circle {
+        opacity: 1;
+      }
+
+      .progress__bar {
+        opacity: 1;
+      }
+    }
+  }
+
+  .content {
+    height: fit-content;
+
+    > span {
+      font-family: ${({ theme }) => theme.font.secondary};
+      font-size: ${({ theme }) => theme.font.size.subheading1};
+      font-weight: 700;
+      background: ${({ theme }) => theme.gradients.gradient2};
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    > h4 {
+      margin-top: 8px;
+      text-transform: uppercase;
+    }
+
+    .description {
+      margin-top: 8px;
+    }
+  }
 `
