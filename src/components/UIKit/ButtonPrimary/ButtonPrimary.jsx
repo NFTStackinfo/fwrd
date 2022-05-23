@@ -20,6 +20,15 @@ export const ButtonPrimary = ({
               rel='noreferrer'
               href={to}
               target={newTab ? '_blank' : '_self'}
+              className='btn_primary__icon_wrapper'
+              onClick={onClick}
+            >
+              <Icon name={iconName} color={theme.colors.white} />
+            </a>
+            <a
+              rel='noreferrer'
+              href={to}
+              target={newTab ? '_blank' : '_self'}
               className='btn btn_primary__btn'
               onClick={onClick}
             >
@@ -39,6 +48,12 @@ export const ButtonPrimary = ({
         )
         : (
           <>
+            <button
+              className='btn_primary__icon_wrapper'
+              onClick={onClick}
+            >
+              <Icon name={iconName} color={theme.colors.white} />
+            </button>
             <button
               className='btn btn_primary__btn'
               onClick={onClick}

@@ -280,7 +280,24 @@ export const GlobalStyle = createGlobalStyle`
       flex-direction: row;
       align-items: flex-start;
       padding: 0;
-      gap: 8px;
+      position: relative;
+
+      &:hover {
+        .btn_primary__btn {
+          transform: translate(56px, 0);
+        }
+
+        .btn_primary__icon_wrapper {
+          &:first-child {
+            transform: scale(1);
+            opacity: 1;
+          }
+
+          &:last-child {
+            transform: translateX(56px) scale(0);
+          }
+        }
+      }
 
       &__btn {
         border: 2px solid #ffffff;
@@ -294,6 +311,21 @@ export const GlobalStyle = createGlobalStyle`
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.3s;
+        transform-origin: 0 50%;
+        cursor: pointer;
+
+        &:first-child {
+          transform: scale(0);
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        &:last-child {
+          transform: translateX(8px) scale(1);
+        }
 
         path {
           transition: 0.3s;
