@@ -60,8 +60,8 @@ function App(props) {
 		<>
 			<Preloader onLoad={handleLoad} />
 
-			<Header onLinkClick={handleLinkClick} />
-			<Hero />
+			<Header onLinkClick={handleLinkClick}/>
+			<Hero loading={loading}/>
 			<About ref={aboutRef} />
 			<Collection ref={collectionRef} />
 			<Roadmap ref={roadmapRef} />

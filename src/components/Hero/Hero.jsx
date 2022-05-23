@@ -8,7 +8,7 @@ const Hero = forwardRef(({ loading }, ref) => {
 	return (
 		<HeroStyle ref={ref} className="wrapper">
 			<div className="container">
-				<Fade>
+				<Fade when={!loading}>
 					<img src="/assets/logo/logo.svg" alt="ELEMENTALS" />
 
 					<p>
@@ -16,9 +16,9 @@ const Hero = forwardRef(({ loading }, ref) => {
 						to us and hopefully, to many more.
 					</p>
 
-          <div className='mint-container'>
-            <ConnectButton />
-          </div>
+          {/*<div className='mint-container'>*/}
+          {/*  <ConnectButton />*/}
+          {/*</div>*/}
 
 					<div className="banner">
 						<img src="/assets/hero/elementals.png" alt="" />
