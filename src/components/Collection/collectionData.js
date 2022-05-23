@@ -23,7 +23,7 @@ export const collectionList = [
 
 	[
 		{
-			image: '/assets/collection/collection-1.png',
+			image: '/assets/collection/collection-2.png',
 			title: 'Earth',
 			list: [
 				'Lorem ipsum dolor sit ',
@@ -33,7 +33,7 @@ export const collectionList = [
 		},
 
 		{
-			image: '/assets/collection/collection-1.png',
+			image: '/assets/collection/collection-2.png',
 			title: 'Earth',
 			list: [
 				'Lorem ipsum dolor sit ',
@@ -45,7 +45,7 @@ export const collectionList = [
 
 	[
 		{
-			image: '/assets/collection/collection-1.png',
+			image: '/assets/collection/collection-3.png',
 			title: 'Earth',
 			list: [
 				'Lorem ipsum dolor sit ',
@@ -55,7 +55,7 @@ export const collectionList = [
 		},
 
 		{
-			image: '/assets/collection/collection-1.png',
+			image: '/assets/collection/collection-3.png',
 			title: 'Earth',
 			list: [
 				'Lorem ipsum dolor sit ',
