@@ -49,13 +49,13 @@ const Header = ({ onLinkClick }) => {
 					</nav>
 					<ul className="social">
 						<li>
-							<IconWrapper iconName="twitter" size="lg" />
+							<IconWrapper iconName="twitter" size="lg" to="https://twitter.com/weareelementals"/>
 						</li>
 						<li>
 							<IconWrapper iconName="instagram" size="lg" />
 						</li>
 						<li>
-							<IconWrapper iconName="discord" size="lg" />
+							<IconWrapper iconName="discord" size="lg" to="https://discord.gg/elementalsnft"/>
 						</li>
 					</ul>
 					<button

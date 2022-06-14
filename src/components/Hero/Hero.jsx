@@ -25,7 +25,10 @@ const Hero = forwardRef(({ loading }, ref) => {
 					</div>
 				</Fade>
 
-				<ButtonPrimary>JOIN OUR DISCORD</ButtonPrimary>
+				<ButtonPrimary
+          isLink={true}
+          to="https://discord.gg/elementalsnft"
+        >JOIN OUR DISCORD</ButtonPrimary>
 			</div>
 		</HeroStyle>
 	)

@@ -80,9 +80,15 @@ const Collection = forwardRef((props, ref) => {
 				</h5>
 
 				<div className="socials">
-					<Button>DISCORD</Button>
+					<Button
+            isLink={true}
+            to="https://discord.gg/elementalsnft"
+          >DISCORD</Button>
 
-					<Button>TWITTER</Button>
+					<Button
+            isLink={true}
+            to="https://twitter.com/weareelementals"
+          >TWITTER</Button>
 				</div>
 
 				<div className="collection__items" ref={collectionItemsRef}>
