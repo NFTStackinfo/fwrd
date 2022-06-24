@@ -28,7 +28,7 @@ export const RoadmapItemStyle = styled.div`
       }
 
       .progress__bar {
-        background-image: linear-gradient(201.72deg, #EC4E27 14.24%, #7EC1FF 179.97%);;
+        background-image: linear-gradient(201.72deg, #EC4E27 14.24%, #7EC1FF 179.97%);
       }
     }
   }
@@ -65,6 +65,18 @@ export const RoadmapItemStyle = styled.div`
 
       .progress__bar {
         background-image: linear-gradient(205.18deg, #EC4E27 -266.23%, #7EC1FF 66.35%);
+      }
+    }
+  }
+
+  &.roadmap-item-5 {
+    .progress-overlay {
+      .progress__circle {
+        background-color: #7FC2FF;
+      }
+
+      .progress__bar {
+        background-image: linear-gradient(206.4deg, #EC4E27 -363.04%, #7EC1FF 16.59%);
       }
     }
   }
@@ -114,17 +126,7 @@ export const RoadmapItemStyle = styled.div`
   .content {
     height: fit-content;
 
-    > span {
-      font-family: ${({ theme }) => theme.font.secondary};
-      font-size: ${({ theme }) => theme.font.size.subheading1};
-      font-weight: 700;
-      background: ${({ theme }) => theme.gradients.gradient2};
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
     > h4 {
-      margin-top: 8px;
       text-transform: uppercase;
     }
 

@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade'
 import { RoadmapItemStyle } from './RoadmapItem.style'
 import { normalizeRange } from '../../../utils/math'
 
-function RoadmapItem({ step, title, content, space = true, className='' }) {
+function RoadmapItem({title, content, space = true, className='' }) {
   const progressRef = useRef()
   const [loadedHeight, setLoadedHeight] = useState(0)
 
@@ -47,8 +47,6 @@ function RoadmapItem({ step, title, content, space = true, className='' }) {
 
 			<Fade bottom duration={1000} distance="25%">
 				<div className="content">
-					<span>{step}</span>
-
 					<h4>{title}</h4>
 
 					<div className="description">{content}</div>

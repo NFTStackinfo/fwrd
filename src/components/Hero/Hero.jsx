@@ -12,8 +12,7 @@ const Hero = forwardRef(({ loading }, ref) => {
 					<img src="/assets/logo/logo.svg" alt="ELEMENTALS" />
 
 					<p>
-						Lorem ipsum The message we want to spread is simple, but important
-						to us and hopefully, to many more.
+            The Elementals are bringing wellness and good vibes to web3
 					</p>
 
           {/*<div className='mint-container'>*/}

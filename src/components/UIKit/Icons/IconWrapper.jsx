@@ -10,6 +10,8 @@ const IconWrapperStyle = styled.a`
 	align-items: center;
 	justify-content: center;
 	transition: 0.3s;
+  cursor: pointer;
+  width: fit-content;
 
 	&:hover {
 		background-color: ${({ theme }) => theme.colors.white};
@@ -26,11 +28,21 @@ const IconWrapperStyle = styled.a`
 	}
 `
 
-function IconWrapper({ to = '#', iconName = 'twitter', size="sm" }) {
+function IconWrapper({ to, iconName = 'twitter', size="sm", onClick, className }) {
 	return (
-		<IconWrapperStyle href={to} target="_blank" rel="noreferrer" size={size}>
-			<Icon name={iconName} size={size === 'sm' ? '22px' : '32px'} />
-		</IconWrapperStyle>
+    <>
+      {to ?
+        <IconWrapperStyle href={to} target="_blank" rel="noreferrer" size={size}
+                          className={className}>
+          <Icon name={iconName} size={size === 'sm' ? '22px' : '32px'} />
+        </IconWrapperStyle>
+        :
+        <IconWrapperStyle size={size} onClick={onClick} className={className}>
+          <Icon name={iconName} size={size === 'sm' ? '22px' : '32px'} />
+        </IconWrapperStyle>
+      }
+    </>
+
 	)
 }
 

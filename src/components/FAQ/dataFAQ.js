@@ -2,7 +2,7 @@ import React from 'react'
 
 const data = [
 	{
-		question: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCIENG ELIT',
+		question: 'WHAT ARE ELEMENTALS?',
 		answer: (
 			<>
 				<p>
@@ -13,7 +13,7 @@ const data = [
 		),
 	},
 	{
-		question: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCIENG ELIT',
+		question: 'WHAT IS THE SOCIAL SPA?',
 		answer: (
 			<>
 				<p>
@@ -24,7 +24,7 @@ const data = [
 		),
 	},
 	{
-		question: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCIENG ELIT',
+		question: 'WHY NFTS?',
 		answer: (
 			<>
 				<p>
@@ -35,7 +35,7 @@ const data = [
 		),
 	},
 	{
-		question: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCIENG ELIT',
+		question: 'WHAT’S THE VIBE OF ELEMENTALS?',
 		answer: (
 			<>
 				<p>
@@ -45,6 +45,28 @@ const data = [
 			</>
 		),
 	},
+  {
+    question: 'WHEN MINT?',
+    answer: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
+          augue eu lorem euismod cursus sit amet at massa.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: 'HOW IS THE PROJECT UNIQUE?',
+    answer: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
+          augue eu lorem euismod cursus sit amet at massa.
+        </p>
+      </>
+    ),
+  },
 ]
 
 export default data
