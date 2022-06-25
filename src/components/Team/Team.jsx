@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useRef } from 'react'
+import React, { forwardRef, useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { TeamStyle } from './Team.style'
@@ -6,6 +6,7 @@ import SectionTitle from '../UIKit/SectionTitle/SectionTitle'
 import TeamItem from './TeamItem/TeamItem'
 import { teamList } from './teamData'
 import TeamCarousel from './TeamCarousel/TeamCarousel'
+import TeamItemModal from './TeamItemModal/TeamItemModal'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -45,18 +46,37 @@ const Team = forwardRef((props, ref) => {
 			)
 	}, [])
 
-	return (
+  const [isModalActive, setIsModalActive] = useState(false)
+  const [modalMemberId, setModalMemberId] = useState(0)
+
+  const handleReadMore = (idx) => {
+    setModalMemberId(idx)
+    setIsModalActive(true)
+  }
+
+  const handleModalToggle = (state) => {
+    console.log('modalState : ', state)
+    setIsModalActive(state)
+  }
+
+  return (
 		<TeamStyle ref={ref} id="team" className="wrapper">
 			<div className="container">
 				<SectionTitle>OUR TEAM</SectionTitle>
 
 				<div className="team__container" ref={teamContainerRef}>
 					{teamList.map((data, idx) => (
-						<TeamItem key={`${data.name}_${idx}`} {...data} />
+						<TeamItem key={`${data.name}_${idx}`} {...data} onReadMore={() => handleReadMore(idx)} />
 					))}
 				</div>
 
-				<TeamCarousel />
+				<TeamCarousel onReadMoreCarousel={handleReadMore}/>
+
+        <TeamItemModal
+          isActive={isModalActive}
+          onModalToggle={handleModalToggle}
+          {...teamList[modalMemberId]}
+        />
 			</div>
 		</TeamStyle>
 	)

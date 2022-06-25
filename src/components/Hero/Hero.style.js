@@ -10,15 +10,11 @@ export const HeroStyle = styled.section`
 
 	.container {
 		background: ${({ theme }) => theme.colors.lightBlue};
-		padding: 48px 140px;
+		padding: 48px 40px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		border-radius: 20px;
-
-		@media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
-			padding-inline: 40px;
-		}
 
 		@media (max-width: ${({ theme }) => theme.breakpoints.md}) {
 			padding: 32px 16px;
@@ -44,21 +40,19 @@ export const HeroStyle = styled.section`
 			justify-content: center;
 			margin-top: 40px;
 			margin-bottom: 60px;
-			padding-top: 40px;
 			background-image: url('/assets/hero/logo-wordmark.svg');
 			background-repeat: no-repeat;
-			background-size: contain;
+			background-size: 80% auto;
+      background-position: center top;
 
 			@media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
 				padding-top: 16px;
 			}
 
 			img {
-				width: 444px;
-
-				@media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-					width: 63%;
-				}
+        width: 100%;
+        max-width: 100%;
+        display: block;
 			}
 		}
 	}

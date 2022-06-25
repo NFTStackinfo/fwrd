@@ -1,10 +1,10 @@
 import { TeamCarouselStyle } from './TeamCarousel.style'
 import { Carousel } from '../../UIKit'
-import React, { useMemo } from 'react'
+import React, { useEffect, useMemo } from 'react'
 import teamList from '../teamData'
 import TeamItem from '../TeamItem/TeamItem'
 
-function TeamCarousel() {
+function TeamCarousel({ onReadMoreCarousel }) {
 	const settings = useMemo(() => {
 		return {
 			dots: true,
@@ -18,11 +18,16 @@ function TeamCarousel() {
 		}
 	}, [])
 
+  // useEffect(() => {
+  //   console.log('onReadMore : ', onReadMore)
+  // }, [])
+
+
 	return (
 		<TeamCarouselStyle className="team-carousel">
 			<Carousel settings={settings}>
 				{teamList.map((data, idx) => (
-					<TeamItem key={`${data.name}_${idx}`} {...data} />
+					<TeamItem key={`${data.name}_${idx}`} {...data} onReadMore={() => onReadMoreCarousel(idx)} />
 				))}
 			</Carousel>
 		</TeamCarouselStyle>

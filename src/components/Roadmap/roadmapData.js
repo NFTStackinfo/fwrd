@@ -1,69 +1,63 @@
 export const roadmapData = [
-	{
-		step: '25%',
-		title: 'COMMUNITY BUILDING',
-		content: (
-			<>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-					eu nisi id neque volutpat maximus eget egestas quam. Nullam placerat
-					nunc elit, non aliquam velit feugiat sed. Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit. Pellentesque eu nisi id neque volutpat
-					maximus eget egestas quam. Nullam placerat nunc elit, non aliquam
-					velit feugiat sed.
-				</p>
-			</>
-		),
-	},
+  {
+    title: 'THE SOCIAL SPA',
+    content: (
+      <>
+        <p>
+          An optimistic social club to nourish your body, mind and soul. Access
+          to videos, classes, education, coaching and more to make your life a
+          little better each and every day.
+        </p>
+      </>
+    ),
+  },
 
-	{
-		step: '50%',
-		title: 'COMMUNITY BUILDING',
-		content: (
-			<>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-					eu nisi id neque volutpat maximus eget egestas quam. Nullam placerat
-					nunc elit, non aliquam velit feugiat sed. Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit. Pellentesque eu nisi id neque volutpat
-					maximus eget egestas quam. Nullam placerat nunc elit, non aliquam
-					velit feugiat sed.
-				</p>
-			</>
-		),
-	},
+  {
+    title: 'ACCESS TO FWRD',
+    content: (
+      <>
+        <p>
+          Supplements, products and perks with exclusive member only drops and
+          membership
+        </p>
+      </>
+    ),
+  },
 
-	{
-		step: '75%',
-		title: 'COMMUNITY BUILDING',
-		content: (
-			<>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-					eu nisi id neque volutpat maximus eget egestas quam. Nullam placerat
-					nunc elit, non aliquam velit feugiat sed. Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit. Pellentesque eu nisi id neque volutpat
-					maximus eget egestas quam. Nullam placerat nunc elit, non aliquam
-					velit feugiat sed.
-				</p>
-			</>
-		),
-	},
+  {
+    title: 'MAKE OUR WORLD BETTER',
+    content: (
+      <>
+        <p>
+          Social impact partnerships in global conservation, social liberties
+          and education
+        </p>
+      </>
+    ),
+  },
 
-	{
-		step: '100%',
-		title: 'COMMUNITY BUILDING',
-		content: (
-			<>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-					eu nisi id neque volutpat maximus eget egestas quam. Nullam placerat
-					nunc elit, non aliquam velit feugiat sed. Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit. Pellentesque eu nisi id neque volutpat
-					maximus eget egestas quam. Nullam placerat nunc elit, non aliquam
-					velit feugiat sed.
-				</p>
-			</>
-		),
-	},
+  {
+    title: 'LAND DAO',
+    content: (
+      <>
+        <p>
+          We’ll purchase a plot of irl land and decide how it gets developed and
+          hodlers have access to events, retreats and festivals
+        </p>
+      </>
+    ),
+  },
+
+  {
+    title: 'SOCIAL SPA METAVERSE',
+    content: (
+      <>
+        <p>
+          All Elemental NFTs will be metaverse ready for avatar use. Join us at
+          The Social Spa we’ve built in NFTWorlds. Your new place to relax, vibe
+          and renew.
+        </p>
+      </>
+    ),
+  },
 ]

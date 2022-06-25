@@ -22,6 +22,7 @@ export const CollectionStyle = styled.section`
 
 		> h5 {
 			margin-top: 24px;
+      letter-spacing: 0.03em;
 		}
 
 		.socials {

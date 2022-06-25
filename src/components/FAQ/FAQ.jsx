@@ -49,7 +49,7 @@ const FAQ = forwardRef((props, ref) => {
 											duration={600}
 										>
 											<div className="trigger-inner">
-												<h3>{q.question}</h3>
+												<h3 className="subheading1">{q.question}</h3>
 											</div>
 										</Fade>
 									}

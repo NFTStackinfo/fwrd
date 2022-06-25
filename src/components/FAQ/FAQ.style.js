@@ -101,7 +101,6 @@ export const FAQStyle = styled.section`
 		text-transform: uppercase;
 
 		h3 {
-			font-size: ${({ theme }) => theme.font.size.h5};
 		}
 	}
 

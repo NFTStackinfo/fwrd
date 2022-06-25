@@ -12,7 +12,10 @@ const fadeIn = keyframes`
 export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Brown Trial';
-    src: url('/assets/fonts/BrownTrial-LightTrial.eot') format('embedded-opentype'), /* IE6-IE8 */ url('../../assets/fonts/BrownTrial-LightTrial.woff2') format('woff2'), /* Super Modern Browsers */ url('../../assets/fonts/BrownTrial-LightTrial.woff') format('woff'), /* Pretty Modern Browsers */ url('../../assets/fonts/BrownTrial-LightTrial.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('../fonts/BrownTrial-LightTrial.eot') format('embedded-opentype'),
+    url('../fonts/BrownTrial-LightTrial.woff2') format('woff2'),
+    url('../fonts/BrownTrial-LightTrial.woff') format('woff'),
+    url('../fonts/BrownTrial-LightTrial.ttf') format('truetype'); /* Safari, Android, iOS */
     font-weight: 300;
   }
 
@@ -127,10 +130,17 @@ export const GlobalStyle = createGlobalStyle`
     background-size: cover;
   }
 
-  .container {
-    max-width: 1120px;
+  .container, .container-sm {
     margin: 0 auto;
     width: 100%;
+  }
+
+  .container {
+    max-width: 1120px;
+
+    &-sm {
+      max-width: 548px;
+    }
   }
 
   .wrapper {
@@ -143,12 +153,15 @@ export const GlobalStyle = createGlobalStyle`
 
   /*typography*/
 
+  .h1, .h2, .h3, .h4, .h5, h1, h2, h3, h3, h4, h5, .subheading1, .subheading2 {
+    letter-spacing: 0.03em;
+  }
+
   h1, h2, h3, h4, h5,
   .h1, .h2, .h3, .h4, .h5 {
     line-height: 1.2;
     font-family: ${({ theme }) => theme.font.primary};
     color: ${({ theme }) => theme.colors.white};
-    letter-spacing: 0.03em;
     font-weight: 300;
   }
 

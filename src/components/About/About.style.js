@@ -56,6 +56,11 @@ export const AboutStyle = styled.section`
 			color: ${({ theme }) => theme.colors.white};
 			width: calc(100% - 340px);
 
+      h1 {
+        font-family: ${({ theme }) => theme.font.secondary};
+        font-weight: 300;
+      }
+
 			@media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
 				width: calc(100% - 366px);
 			}
